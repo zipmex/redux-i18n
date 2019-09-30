@@ -71,7 +71,7 @@ export default (translations, lang, fallbackLang) => {
     if (message === undefined || message === '') {
       // If don't have literal translation and have fallback lang, try
       // to get from there.
-      console.warn(`Missing translation for id ${textKey} in language ${lang}`);
+      // console.warn(`Missing translation for id ${textKey} in language ${lang}`);
       if (fallbackLangMessages) {
         let literal = fallbackLangMessages[textKey];
         if (literal !== undefined && literal !== '') {
