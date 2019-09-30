@@ -11,6 +11,7 @@
   "scripts": {
     "build": "babel src --out-dir dist",
     "lint": "eslint src",
+    "prepare": "npm run build",
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register --recursive && npm run lint"
   },
   "files": [
